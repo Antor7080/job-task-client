@@ -37,7 +37,7 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
     const databaseUrl = (path) => {
-        const url = `http://localhost:5000/${path}`
+        const url = `https://evening-eyrie-71506.herokuapp.com/${path}`
         return url
     }
     const loginUser = (email, password, history) => {
@@ -91,7 +91,7 @@ const useFirebase = () => {
 
     const saveUser = (data, method) => {
 
-        fetch('http://localhost:5000/users', {
+        fetch('https://evening-eyrie-71506.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
